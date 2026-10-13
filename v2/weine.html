@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Weine | Cantina Urs Hauser</title>
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hd">
+  <button class="hd__burger" type="button" aria-label="Menü"><span></span><span></span></button>
+  <nav aria-label="Hauptnavigation">
+    <ul class="hd__nav">
+      <li><a href="weingut.html">Weingut</a>
+        <ul class="hd__sub">
+          <li><a href="weingut.html#urs">Urs Hauser</a></li>
+          <li><a href="weingut.html#rebberge">Rebberge</a></li>
+          <li><a href="weingut.html#keller">Keller</a></li>
+          <li><a href="weingut.html#degustation">Degustation</a></li>
+        </ul>
+      </li>
+      <li><a href="weine.html" class="is-active">Weine</a></li>
+      <li><a href="#auszeichnungen">Auszeichnungen</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+  <a class="hd__logo" href="index.html"><img src="../assets/logo-urs-hauser.png" alt="Urs Hauser"></a>
+  <div class="hd__right">
+    <a class="hd__order" href="weine.html"><span class="label">Bestellen</span> <span class="js-count">0</span></a>
+    <a class="hd__lang" href="#">IT</a>
+  </div>
+</header>
+
+<main class="page">
+  <section class="banner">
+    <img src="https://www.wdmra.ch/architetti/proj_images/progetti_img_immagine_956438735.jpg" alt="Barriques und Stahltanks im Keller">
+    <h1>Weine</h1>
+  </section>
+
+  <section class="intro appear">
+    <p>Merlot ist das Herz der Cantina: als Rotwein im Barrique ausgebaut und als weiss gekelterter Bianco di Merlot. Dazu kommen Sauvignon Blanc, Cabernet und robuste Sorten wie Johanniter und Solaris.</p>
+    <p>Die Namen erzählen vom Abend und von der Musik: Bella Stasera, Stella, Dopo Mezzanotte und die Barocktänze Bourrée und Sarabande. Jeder Wein bekommt die Zeit, die er braucht.</p>
+  </section>
+
+  <section class="block" id="weissweine">
+    <div class="block__text appear">
+      <h2>Weissweine</h2>
+      <p>Frisch, saftig und klar. Die Weissweine zeigen Zitrus, Steinobst und eine feine mineralische Note, getragen von den kühlen Nächten an den Nordhängen.</p>
+      <ul class="links" data-wines="weiss"></ul>
+    </div>
+    <div class="block__media lineup" data-wines="weiss"></div>
+  </section>
+
+  <section class="block block--flip" id="rotweine">
+    <div class="block__text appear">
+      <h2>Rotweine</h2>
+      <p>Merlot aus Steillagen, im Barrique ausgebaut: samtig, tief und mit sehr gutem Lagerpotenzial. Le Cime vereint Merlot mit Cabernet Sauvignon und Cabernet Franc.</p>
+      <ul class="links" data-wines="rot"></ul>
+    </div>
+    <div class="block__media lineup" data-wines="rot"></div>
+  </section>
+
+  <section class="awards appear" id="auszeichnungen">
+    <h2>Auszeichnungen</h2>
+    <table>
+      <tbody>
+        <tr><td>92</td><td>Stella 2019</td><td>Falstaff Weinguide Schweiz</td></tr>
+        <tr><td>92</td><td>Stella 2018</td><td>Falstaff Weinguide Schweiz</td></tr>
+        <tr><td>91</td><td>Le Cime 2019</td><td>Falstaff Weinguide Schweiz</td></tr>
+        <tr><td>90</td><td>Le Cime Rosso 2020</td><td>Falstaff Weinguide Schweiz</td></tr>
+        <tr><td>90</td><td>Dopo Mezzanotte 2019</td><td>Falstaff Weinguide Schweiz</td></tr>
+        <tr><td>90</td><td>Stella 2017</td><td>Falstaff Weinguide Schweiz</td></tr>
+        <tr><td>88</td><td>Bourrée 2021</td><td>Falstaff Weinguide Schweiz</td></tr>
+        <tr><td>88</td><td>Bella Stasera 2019</td><td>Falstaff Weinguide Schweiz</td></tr>
+        <tr><td>87</td><td>Tutto Bene 2021</td><td>Falstaff Weinguide Schweiz</td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer class="ft">
+  <span>© Cantina Urs Hauser · Mock-up</span>
+  <nav><a href="#">Rechtliches</a><a href="kontakt.html#newsletter">Newsletter</a></nav>
+</footer>
+
+<div class="scrim" aria-hidden="true"></div>
+<aside class="sheet" aria-hidden="true" aria-label="Weindetails">
+  <button class="sheet__close" type="button" aria-label="Schliessen">×</button>
+  <div class="sheet__media"><img src="" alt=""></div>
+  <div class="sheet__body">
+    <p class="sheet__meta"></p>
+    <h2></h2>
+    <p class="sheet__meaning"></p>
+    <p class="sheet__note"></p>
+    <dl></dl>
+    <div class="buy">
+      <span class="price"></span>
+      <button class="btn js-add" type="button">In den Warenkorb</button>
+      <span class="score"></span>
+    </div>
+  </div>
+</aside>
+
+<script>
+  window.WINES = [
+    { id: 'tutto-bene', group: 'weiss', name: 'Tutto Bene', meaning: '«alles gut»', type: 'Weiss · Bianco del Ticino DOC', vintage: 2025,
+      img: 'eyJrZXkiOiI5Yzg5MzUxZS1hMmVkLTQwYmItYTJkMC0zZTdkNWJiMTU0YWMucG5nIiwiYnVja2V0Ijoic3BpbmUtcHJvZHVjdC1pbWFnZXMtcHJvZCIsImVkaXRzIjp7InJlc2l6ZSI6eyJoZWlnaHQiOjgwMH0sInRyaW0iOjAuMX19',
+      note: 'Melone, gelber Pfirsich, Zitrus und ein Hauch Quitte, dazu eine mineralische Note. Frisch, saftig und schön ausgewogen. Johanniter und Solaris sind robuste Sorten, die gut in die Steillagen passen.',
+      grapes: 'Johanniter, Merlot, Solaris', ageing: 'Stahltank', abv: '12,5 %', pairs: 'Apéro, Süsswasserfisch, Risotto aus Maggiataler Reis', price: 'CHF 22.95' },
+    { id: 'bourree', group: 'weiss', name: 'Bourrée', meaning: 'ein lebhafter Barocktanz', type: 'Weiss · Bianco di Merlot Ticino DOC', vintage: 2024,
+      img: 'eyJrZXkiOiI3ZDRhYzNjOS1kY2NhLTRiNDItODZlMS1hZTY0NzdlMWQ2N2EucG5nIiwiYnVja2V0Ijoic3BpbmUtcHJvZHVjdC1pbWFnZXMtcHJvZCIsImVkaXRzIjp7InJlc2l6ZSI6eyJoZWlnaHQiOjgwMH0sInRyaW0iOjAuMX19',
+      note: 'Merlot, weiss gekeltert. Strohgelb, mit Apfel, Ananas, Zitrus und Akazienblüte. Trocken, frisch und elegant, mit langem Zitrusfinale.',
+      grapes: 'Merlot', ageing: 'Stahltank', abv: '12,5 %', pairs: 'Apéro, helles Fleisch, Risotto mit Egli', price: 'CHF 19.95', score: 'Falstaff <b>88</b> (2021)' },
+    { id: 'sarabande', group: 'weiss', name: 'Sarabande', meaning: 'ein langsamer Barocktanz', type: 'Weiss · Bianco di Sauvignon Blanc Ticino DOC', vintage: 2023,
+      img: 'eyJrZXkiOiJmZDE3YzliYS1iYjRlLTRlMDQtODdjZi02MDc2MDRiNDJmNmQucG5nIiwiYnVja2V0Ijoic3BpbmUtcHJvZHVjdC1pbWFnZXMtcHJvZCIsImVkaXRzIjp7InJlc2l6ZSI6eyJoZWlnaHQiOjgwMH0sInRyaW0iOjAuMX19',
+      note: 'Saftige Zitrusfrüchte und grüner Apfel, dazu ein Hauch frischer Kräuter. Klar am Gaumen, mit knackigem Finale.',
+      grapes: 'Sauvignon Blanc', ageing: 'Barrique, 25 % neu', abv: '12,5 %', pairs: 'Grilliertes Poulet, Pasta mit Meeresfrüchten, Frühlingsgemüse', price: 'CHF 29.95' },
+    { id: 'bella-stasera', group: 'rot', name: 'Bella Stasera', meaning: '«was für ein schöner Abend»', type: 'Rot · Merlot del Ticino DOC', vintage: 2023,
+      img: 'eyJrZXkiOiJkMGVhYWQyYy0yN2ZlLTRjZTQtOWMzYS05ZjM4YjRjZTAzODkucG5nIiwiYnVja2V0Ijoic3BpbmUtcHJvZHVjdC1pbWFnZXMtcHJvZCIsImVkaXRzIjp7InJlc2l6ZSI6eyJoZWlnaHQiOjgwMH0sInRyaW0iOjAuMX19',
+      note: 'Kirsche, Pflaume und feine Gewürze von granitreichen Böden. Samtig und harmonisch, der Wein, den man sich in einem guten Tessiner Grotto wünscht.',
+      grapes: 'Merlot', ageing: '12 Monate französische Eiche', abv: '13,5 %', pairs: 'Tessiner Teller mit Käse und Salumi', price: 'CHF 22.95', score: 'Falstaff <b>88</b> (2019)' },
+    { id: 'dopo-mezzanotte', group: 'rot', name: 'Dopo Mezzanotte', meaning: '«nach Mitternacht»', type: 'Rot · Merlot del Ticino DOC', vintage: 2020,
+      img: 'eyJrZXkiOiIwYTczOTYzOC0xNmVkLTRjMTEtOTcwZC1iZmYwNDlmMzQ5ZTEucG5nIiwiYnVja2V0Ijoic3BpbmUtcHJvZHVjdC1pbWFnZXMtcHJvZCIsImVkaXRzIjp7InJlc2l6ZSI6eyJoZWlnaHQiOjgwMH0sInRyaW0iOjAuMX19',
+      note: 'Kirsche, Waldbeeren, Vanille und geröstete Mandeln. Warm und weich, mit samtigen Tanninen. Für die Stunden, in denen der Tisch noch voll ist.',
+      grapes: 'Merlot', ageing: 'Barrique, 20 % neu', abv: '13,5 %', pairs: 'Rotes Fleisch, reifer Käse', price: 'CHF 31.95', score: 'Falstaff <b>90</b> (2019)' },
+    { id: 'stella', group: 'rot', name: 'Stella', meaning: '«Stern»', type: 'Rot · Merlot del Ticino DOC', vintage: 2018,
+      img: 'eyJrZXkiOiIzODAxZTEzMS0wNDk1LTQzZDAtYTNlZC0xN2MzMzVmYTZiMGEucG5nIiwiYnVja2V0Ijoic3BpbmUtcHJvZHVjdC1pbWFnZXMtcHJvZCIsImVkaXRzIjp7InJlc2l6ZSI6eyJoZWlnaHQiOjgwMH0sInRyaW0iOjAuMX19',
+      note: 'Heidelbeere, Waldbeeren, Toast, Schokolade und ein Hauch Eukalyptus. Warm, weich und tief, mit langem Nachhall von gerösteten Mandeln und roten Früchten. Sehr gutes Lagerpotenzial.',
+      grapes: 'Merlot', ageing: 'Barrique, 40 % neu', abv: '13,5 %', pairs: 'Tessiner Gitzi, Hirschpfeffer, reifer Käse', price: 'CHF 44.95', score: 'Falstaff <b>92</b> (2018)' },
+    { id: 'le-cime', group: 'rot', name: 'Le Cime', meaning: '«die Gipfel»', type: 'Rot · Rosso del Ticino DOC', vintage: 2023,
+      img: 'eyJrZXkiOiIzYzRmMmZjMS0wZWRiLTRmNTEtODk1Yy1lMjZlNjI0MGFmODYucG5nIiwiYnVja2V0Ijoic3BpbmUtcHJvZHVjdC1pbWFnZXMtcHJvZCIsImVkaXRzIjp7InJlc2l6ZSI6eyJoZWlnaHQiOjgwMH0sInRyaW0iOjAuMX19',
+      note: 'Die Spitze des Sortiments: eine Bordeaux-Assemblage, gemacht zusammen mit Stefano Fuso aus Gerra Piano. Dunkle Frucht, süsse Gewürze und Waldboden. Reif, lang und samtig.',
+      grapes: 'Merlot, Cabernet Sauvignon, Cabernet Franc', ageing: 'Barrique, 50 % neu', abv: '13,5 %', pairs: 'Wild, Schmorbraten, lange Abende', price: 'CHF 48.95', score: 'Falstaff <b>91</b> (2019)' }
+  ];
+</script>
+<script src="site.js"></script>
+<script src="../assets/iterations.js"></script>
+</body>
+</html>

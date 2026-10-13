@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Urs Hauser · Iterationen</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<style>
+  :root { --bg: #f4f2ee; --ink: #161514; --muted: #77716a; --line: rgba(22,21,20,.12); --card: #fff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Helvetica Neue", sans-serif; }
+  header { padding: 48px clamp(16px, 4vw, 56px) 24px; display: flex; align-items: end; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+  header img { height: 46px; width: auto; display: block; }
+  header p { margin: 0; color: var(--muted); max-width: 520px; }
+  h1 { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; margin: 18px 0 6px; }
+  main { padding: 16px clamp(16px, 4vw, 56px) 80px; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); gap: 28px; }
+  .card { background: var(--card); border-radius: 14px; overflow: hidden; box-shadow: 0 1px 0 var(--line), 0 12px 40px rgba(0,0,0,.06); display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: transform .4s cubic-bezier(.2,.7,.1,1), box-shadow .4s; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 1px 0 var(--line), 0 20px 60px rgba(0,0,0,.12); }
+  .preview { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #ddd; }
+  .preview iframe { position: absolute; top: 0; left: 0; width: 1440px; height: 900px; border: 0; transform-origin: 0 0; pointer-events: none; }
+  .meta { padding: 18px 20px 22px; display: grid; gap: 6px; }
+  .meta .row { display: flex; align-items: baseline; gap: 12px; }
+  .tag { font-size: 11px; font-weight: 700; letter-spacing: .1em; background: var(--ink); color: #fff; padding: 4px 8px; border-radius: 999px; }
+  .meta h2 { margin: 0; font-size: 20px; font-weight: 600; }
+  .meta time { margin-left: auto; color: var(--muted); font-size: 13px; }
+  .meta p { margin: 0; color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <img src="assets/logo-urs-hauser.png" alt="Urs Hauser">
+    <h1>Website-Mock-ups · Iterationen</h1>
+  </div>
+  <p>Alle Entwürfe für die Website der Cantina Urs Hauser. Unten links auf jeder Seite kann man zwischen den Versionen wechseln.</p>
+</header>
+<main id="list"></main>
+
+<script src="assets/iterations.js" data-switcher="off"></script>
+<script>
+  const list = document.getElementById('list');
+  [...window.ITERATIONS].reverse().forEach(it => {
+    const a = document.createElement('a');
+    a.className = 'card';
+    a.href = it.path;
+    a.innerHTML = `
+      <div class="preview"><iframe src="${it.path}" loading="lazy" tabindex="-1" title="Vorschau ${it.id}"></iframe></div>
+      <div class="meta">
+        <div class="row"><span class="tag">${it.id.toUpperCase()}</span><h2>${it.title}</h2><time>${it.date}</time></div>
+        <p>${it.desc}</p>
+      </div>`;
+    list.appendChild(a);
+  });
+  // Scale the 1440px-wide live previews to the card width
+  const fit = () => document.querySelectorAll('.preview').forEach(p => {
+    p.querySelector('iframe').style.transform = `scale(${p.clientWidth / 1440})`;
+  });
+  addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>
