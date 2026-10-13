@@ -13,6 +13,13 @@ window.ITERATIONS = [
     date: '11.10.2026',
     path: 'v2/index.html',
     desc: 'Vollbild-Slides mit Schlagworten und drehender Flasche, Unterseiten Weingut / Weine / Kontakt, Wein-Overlay, schlichte Grotesk.'
+  },
+  {
+    id: 'v3',
+    title: 'Editorial · Weine im Fokus',
+    date: '13.10.2026',
+    path: 'v3/index.html',
+    desc: 'Basis v1. Alle sieben Flaschen nebeneinander mit Name und Preis, kompaktes Detail-Band statt grosser Bühne, weniger Text. Ohne «Cantina · Contone, Tessin» über dem Logo.'
   }
 ];
 
