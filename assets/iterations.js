@@ -20,6 +20,13 @@ window.ITERATIONS = [
     date: '13.10.2026',
     path: 'v3/index.html',
     desc: 'Basis v1. Alle sieben Flaschen nebeneinander mit Name und Preis, kompaktes Detail-Band statt grosser Bühne, weniger Text. Ohne «Cantina · Contone, Tessin» über dem Logo.'
+  },
+  {
+    id: 'v4',
+    title: 'Editorial · Beton & Nacht',
+    date: '13.10.2026',
+    path: 'v4/index.html',
+    desc: 'Wie v3, aber kühle Farbwelt statt Beige/Rost: Betongrau, fast schwarze Schrift, Nachtblau als Akzent. Wärme nur aus Fotos und Etiketten.'
   }
 ];
 
